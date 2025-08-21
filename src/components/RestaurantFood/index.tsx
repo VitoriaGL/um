@@ -19,10 +19,10 @@ export default function Food({
   onClick,
   foto,
   descricao,
-  nome,
-  preco
+  nome
 }: FoodProps) {
-  const limitarDescricao = (descricao: string) => {
+  // CORREÇÃO: A função deve receber a string diretamente
+  function limitarDescricao(descricao: string): string {
     return descricao.length > 150 ? descricao.slice(0, 150) + '...' : descricao
   }
 
@@ -31,8 +31,9 @@ export default function Food({
       <ImagemFood src={foto} />
       <div onClick={onClick}>
         <TitleFood>{nome}</TitleFood>
+        {/* CORREÇÃO: Passar a string diretamente */}
         <DescriptionFood>{limitarDescricao(descricao)}</DescriptionFood>
-        <StyledButton>Adicionar ao carrinho </StyledButton>
+        <StyledButton>Adicionar ao carrinho</StyledButton>
       </div>
     </ContainerFood>
   )

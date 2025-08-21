@@ -3,7 +3,7 @@ import FoodList from '../../components/FoodList'
 import Footer from '../../components/Footer'
 import HeaderPerfil from '../../components/HeaderPerfil'
 import { useParams } from 'react-router-dom'
-import Cart from '../../components/Cart'
+import Cart from '../../components/RestaurantCart'
 import type { CardapioItem, Restaurants } from '../../pages/Home'
 
 const Perfil = () => {

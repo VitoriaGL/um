@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { useGetRestauranteQuery } from '../../services/api'
 import type { CardapioItem } from '../../pages/Home'
-import Food from '../Food'
+import Food from '../RestaurantFood'
 import { List } from './styles'
 import { Container } from '../../styles'
 import {
@@ -17,8 +17,8 @@ import {
 } from './styles'
 import { formataPreco } from '../../utils/formatters'
 import { add, open } from '../../store/reducers/Cart'
-import { Overlay } from '../Cart/styles'
-import Fechar from '../../assets/images/fechar.png'
+import { Overlay } from '../RestaurantCart/styles'
+import Fechar from '../../assets/imagens/close.png'
 
 export default function FoodList() {
   const { id } = useParams<{ id: string }>()

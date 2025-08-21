@@ -5,6 +5,7 @@ import Rotas from './routes'
 import './fonts.css'
 import { store } from './store'
 
+
 function App() {
   return (
     <>

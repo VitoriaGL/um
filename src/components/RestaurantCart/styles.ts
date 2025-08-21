@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
 
-import fechar from '../../assets/images/lixeira'
 
 export const Overlay = styled.div`
   position: absolute;

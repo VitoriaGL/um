@@ -7,16 +7,16 @@ import {
   SideBar,
   Prices,
   Title,
-  lixeira,
+  Lixeira,
   CartItem
 } from './styles'
 import Checkout from '../Checkout'
 import type { RootReducer } from '../../store'
-import lixeira from '../../assets/img/lixeira'
+import  lixeira  from '../../assets/imagens/lixeira.min.svg'
 import { close, openOrder, remove } from '../../store/reducers/Cart'
 import { formataPreco } from '../../utils/formatters'
 
-const Cart = () => {
+function Cart() {
   const { isOpen, items, isOrder } = useSelector(
     (state: RootReducer) => state.cart
   )

@@ -1,8 +1,11 @@
+// styles.ts
 import styled from 'styled-components'
 import { cores } from '../../styles'
 
-export const ContainerFooter = styled.section`
+export const ContainerFooter = styled.footer`  // Mudei de section para footer
   background-color: ${cores.bege};
+  margin-top: 100vh;
+  width: 100%;
 `
 
 export const Logo = styled.img`
@@ -25,10 +28,9 @@ export const ListLogos = styled.ul`
 export const TextFooter = styled.p`
   color: ${cores.rosa};
   font-size: 10px;
-  width: 480px;
+  max-width: 480px;  /
   text-align: center;
   display: block;
   margin: 0 auto;
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding: 80px 20px 40px;
 `
